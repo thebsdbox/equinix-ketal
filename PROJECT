@@ -1,0 +1,25 @@
+domain: equinix.metal
+layout:
+- go.kubebuilder.io/v3
+projectName: equinix-ketal
+repo: github.com/thebsdbox/equinix-ketal
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: equinix.metal
+  group: ketal
+  kind: Eip
+  path: github.com/thebsdbox/equinix-ketal/api/v1
+  version: v1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: equinix.metal
+  group: ketal
+  kind: Device
+  path: github.com/thebsdbox/equinix-ketal/api/v1
+  version: v1
+version: "3"

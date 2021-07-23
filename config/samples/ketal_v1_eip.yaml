@@ -1,0 +1,7 @@
+apiVersion: ketal.equinix.metal/v1
+kind: Eip
+metadata:
+  name: eip-sample
+spec:
+  # Add fields here
+  foo: bar
